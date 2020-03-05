@@ -1,68 +1,77 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# NC News - Front End
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+NC News is a responsive web app built in React that serves as a news aggregation and commentary board.
 
-### `npm start`
+This project can be found hosted here: ...
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+In order to access additional features such as posting and deleting comments, users are required to log in using one of the pre-existing usernames from the dropdown on either the Home or Articles page. For your convenience, those usernames are shown below:
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+grumpy19
+happyamy2016
+cooljmessy
+weegembump
+jessjelly
 
-### `npm test`
+## BackEnd
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The back end API used for this project can be accessed here: (https://portfolio-nc-news.herokuapp.com/api/)
+The Github repository for the back end of this project: [GitHub - JonnyRiley/nc-news-1](https://github.com/JonnyRiley/nc-news-1)
 
-### `npm run build`
+## Getting Started
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+If you would like to experiment with the code used for this project, these instructions will get you up and running.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The following must be installed on your machine in order to run this project locally:
 
-### `npm run eject`
+#### Node.js
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Node Package Manager (npm)
+git (you will also need a github account)
+Installing
+Once you have installed the prerequisites, Fork this repository using the button at the top right of this page. Then, from your personal fork, click the Clone or download button, also near the top right, and copy the link to your repository.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+With that done, navigate in your terminal to where you would like to install the project, then run the following command to clone a copy to your local machine:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+#### git clone repoURL
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+where repoURL is the URL to your forked repository.
 
-## Learn More
+Now you must install the project dependencies using:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### npm install
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The following packages are used in the front end of NC News:
 
-### Code Splitting
+"dependencies": {
+"@reach/router": "^1.2.1",
+"axios": "^0.18.0",
+"react": "^16.7.0",
+"react-dom": "^16.7.0",
+"react-scripts": "2.1.3",
+"terser": "^3.14.1"
+}
+Once these are installed, you can begin experimenting.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+App.js contains the app itself, including the main router and log in/out functionality.
 
-### Analyzing the Bundle Size
+The majority of the screens, components and styling are locating in the src/components/ directory. These components and their associated stylings are roughly grouped by the screens in which they appear, though some components can be found on multiple screens.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+To run a local development environment to view the effect of your changes, enter into your terminal the script:
 
-### Making a Progressive Web App
+#### npm start
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+The app, along with any changes, should open in a web browser tab. You can continue to make changes and, provided there are no errors in your code and the development environment is still running, they will be immediately visible when you save them.
 
-### Advanced Configuration
+If you wish to exit the development environment, enter Ctrl+C/Cmd+C with the terminal highlighted.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+## Authors
 
-### Deployment
+Jonathon Riley
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+## Acknowledgments
 
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Northcoders

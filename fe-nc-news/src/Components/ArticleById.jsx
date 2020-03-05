@@ -20,7 +20,7 @@ class ArticleById extends Component {
     if (isLoading) return IsLoading();
 
     return (
-      <div>
+      <div className="article_id_page">
         <Users username={username} handleChange={handleChange} />
         <main className="article_Id_Tile">
           <h1 className="articleIdH1">{article.title}</h1>

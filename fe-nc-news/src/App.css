@@ -1,10 +1,20 @@
 .mainApp {
-  background-color: white;
+  /* background-image: url(./Components/white-marble.jpeg); */
   min-height: 1000px;
   max-width: auto;
+  background-attachment: fixed;
 }
-
+/* .article_id_page {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "articleById"
+    "comments";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+} */
 h1 {
+  font-size: 3em;
   border-color: black;
   border-style: double;
   border-width: 10px;
@@ -27,7 +37,7 @@ div {
 .li_article_list {
   border-radius: 10%;
   margin: 20px auto;
-  background-color: lightgrey;
+  background-color: lightgray;
   width: 350px;
   height: 385px;
   justify-content: center;
@@ -88,11 +98,12 @@ a {
   grid-template-rows: 100px 160px 50px 50px 50px;
   grid-template-areas: "one" "two" "three" "four" "five";
 }
-.li_comment_list:hover {
-  background-color: rgba(106, 95, 95, 0.351);
-}
+
 .li_comment_author {
   grid-area: one;
+}
+.li_comment_author:hover {
+  color: teal;
 }
 .li_comment_body {
   grid-area: two;
@@ -196,6 +207,9 @@ a {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+.li_article_Id_author:hover {
+  color: teal;
+}
 .li_article_Id_comments {
   grid-area: four;
   display: flex;
@@ -216,7 +230,7 @@ li {
 .articleIdH1 {
   padding: 0px;
   margin: 5px 5px 5px 5px;
-  height: 70px;
+  height: auto;
   display: flex;
   justify-content: center;
 }
@@ -311,6 +325,6 @@ li {
   .articleIdH1 {
     padding: 0px;
     margin: 5px 5px 5px 5px;
-    height: 200px;
+    height: auto;
   }
 }

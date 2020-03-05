@@ -40,7 +40,6 @@ class VoteAdder extends Component {
   handleClick = inc_votes => {
     const { comment_id, article_id } = this.props;
     const { disabled } = this.state;
-    console.log(comment_id, article_id);
 
     this.setState(currentState => {
       return {

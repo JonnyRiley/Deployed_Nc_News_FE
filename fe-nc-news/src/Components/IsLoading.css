@@ -1,4 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
+* {
+  box-sizing: border-box;
+}
 
 body {
   /* padding-top: 10%; */
