@@ -1,18 +1,9 @@
 .mainApp {
-  /* background-image: url(./Components/white-marble.jpeg); */
   min-height: 1000px;
   max-width: auto;
   background-attachment: fixed;
 }
-/* .article_id_page {
-  display: grid;
-  grid-template-areas:
-    "header"
-    "articleById"
-    "comments";
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-} */
+
 h1 {
   font-size: 3em;
   border-color: black;
@@ -60,6 +51,10 @@ div {
 .li_article_title:hover {
   color: teal;
 }
+.li_article_list:hover {
+  background-color: rgba(109, 105, 105, 0.781);
+  font-weight: 600;
+}
 .li_article_readMore {
   background: teal;
   grid-area: four;
@@ -83,6 +78,7 @@ a {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  overflow: hidden;
 }
 
 .li_comment_list {
@@ -97,6 +93,7 @@ a {
   display: grid;
   grid-template-rows: 100px 160px 50px 50px 50px;
   grid-template-areas: "one" "two" "three" "four" "five";
+  overflow: hidden;
 }
 
 .li_comment_author {
@@ -133,24 +130,15 @@ a {
   color: white;
   height: 40px;
   width: 70px;
+  font-size: medium;
 }
-.navTopics {
-  background: black;
-  color: white;
-  height: 40px;
-  width: 70px;
-}
-.navUser {
-  background: black;
-  color: white;
-  height: 40px;
-  width: 70px;
-}
+
 .navHome {
   background: black;
   color: white;
   height: 40px;
   width: 70px;
+  font-size: medium;
 }
 .li_article_Id_list {
   border: black;
@@ -215,14 +203,14 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  padding-left: 45px;
+  padding-left: 35px;
 }
 .li_article_Id_createdAt {
   grid-area: four;
   color: black;
   display: flex;
   flex-direction: row-reverse;
-  padding-right: 80px;
+  padding-right: 70px;
 }
 li {
   text-decoration: none;
@@ -269,13 +257,15 @@ li {
   background-color: teal;
   border-color: black;
   border-width: 0.5em;
-  /* border-radius: 30%; */
   border-style: double;
 }
 .topic_topics_button {
   border-color: black;
   border-width: medium;
   border-radius: 20%;
+  padding-right: 5px;
+  font-size: medium;
+  font-weight: 600;
 }
 .topic_coding_button {
   border-color: black;
@@ -291,15 +281,18 @@ li {
   border-color: black;
   border-width: medium;
   border-radius: 20%;
+  margin-right: 20px;
 }
 .sortBy {
   background-color: black;
   color: white;
   height: 25px;
+  font-size: medium;
+  margin-left: 2px;
 }
 .img_home_BNews {
-  height: 450px;
-  width: 800px;
+  height: 60%;
+  width: 80%;
 }
 .clock {
   display: flex;
@@ -321,10 +314,25 @@ li {
   background-color: black;
   color: white;
 }
+.Votes_Div_VoteCount {
+  overflow: hidden;
+}
 @media only screen and(max-width:600px) {
   .articleIdH1 {
     padding: 0px;
     margin: 5px 5px 5px 5px;
     height: auto;
+  }
+}
+@media only screen and (max-width: 815px) {
+  .img_home_BNews {
+    height: 350px;
+    width: 550px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .img_home_BNews {
+    height: 250px;
+    width: 325px;
   }
 }

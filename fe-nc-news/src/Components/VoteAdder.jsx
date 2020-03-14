@@ -21,7 +21,7 @@ class VoteAdder extends Component {
             👍
           </span>
         </button>
-        <div>
+        <div className="Votes_Div_VoteCount">
           <p>Votes: {votes + voteDifference}</p>
         </div>
         <button

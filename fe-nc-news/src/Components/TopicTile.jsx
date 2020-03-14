@@ -6,7 +6,7 @@ function TopicTile(props) {
     <aside className="TopicTile">
       <ul className="ul_topic_border">
         <label className="topic_topics_button" htmlFor="selectTopic">
-          Select Topic
+          Select Topic:
         </label>
         <button
           className="topic_coding_button"

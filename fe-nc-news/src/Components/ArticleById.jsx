@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import * as Api from "../Api";
 import IsLoading from "../Components/IsLoading";
-import Toggle from "./Toggle";
 import CommentsByArticleId from "../Components/CommentsByArticleId";
 import VoteAdder from "../Components/VoteAdder";
 import ErrorPage from "./ErrorPage";
@@ -22,35 +21,36 @@ class ArticleById extends Component {
     return (
       <div className="article_id_page">
         <Users username={username} handleChange={handleChange} />
-        <main className="article_Id_Tile">
-          <h1 className="articleIdH1">{article.title}</h1>
-          <li className="li_article_Id_list">
-            <h2 className="li_article_Id_author">{article.author}</h2>
-            <p className="li_article_Id_body">{article.body}</p>
-            <VoteAdder
-              className="button_votes"
-              article_id={article.article_id}
-              votes={article.votes}
-            />
+        <main>
+          <main className="article_Id_Tile">
+            <h1 className="articleIdH1">{article.title}</h1>
+            <li className="li_article_Id_list">
+              <h2 className="li_article_Id_author">{article.author}</h2>
+              <p className="li_article_Id_body">{article.body}</p>
+              <VoteAdder
+                className="button_votes"
+                article_id={article.article_id}
+                votes={article.votes}
+              />
 
-            <p className="li_article_Id_comments">
-              Comments: {article.comment_count}
-            </p>
-            <p className="li_article_Id_createdAt">
-              Published at: {new Date(article.created_at).getDate()}
-              {"-"}
-              {new Date(article.created_at).getMonth()}
-              {"-"}
-              {new Date(article.created_at).getFullYear()}
-            </p>
-          </li>
-          <Toggle>
-            <CommentsByArticleId
-              username={username}
-              article_id={article.article_id}
-              {...article}
-            />
-          </Toggle>
+              <p className="li_article_Id_comments">
+                Comments: {article.comment_count}
+              </p>
+              <p className="li_article_Id_createdAt">
+                Published at: {new Date(article.created_at).getDate()}
+                {"-"}
+                {new Date(article.created_at).getMonth()}
+                {"-"}
+                {new Date(article.created_at).getFullYear()}
+              </p>
+            </li>
+          </main>
+
+          <CommentsByArticleId
+            username={username}
+            article_id={article.article_id}
+            {...article}
+          />
         </main>
       </div>
     );

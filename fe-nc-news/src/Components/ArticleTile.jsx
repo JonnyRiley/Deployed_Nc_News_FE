@@ -19,7 +19,7 @@ const ArticleTile = ({
       <VoteAdder article_id={article_id} votes={votes} />
       <p className="li_article_comments">Comments: {comment_count}</p>
       <Link to={`/articles/${article_id}`}>
-        <button className="li_article_readMore">ReadMore</button>
+        <button className="li_article_readMore">Read Comments</button>
       </Link>
       <p className="li_article_created_at">
         Posted at: {new Date(created_at).getDate()}
