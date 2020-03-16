@@ -8,7 +8,6 @@ import { Router } from "@reach/router";
 import CommentsByArticleId from "./Components/CommentsByArticleId";
 import ErrorPage from "./Components/ErrorPage";
 import * as Api from "./Api";
-import Home from "./Components/Home";
 
 class App extends Component {
   state = {
@@ -21,7 +20,6 @@ class App extends Component {
         <Header />
         <Nav />
         <Router>
-          <Home path="/" />
           <Articles
             path="/articles"
             username={username}
