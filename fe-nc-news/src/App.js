@@ -21,17 +21,17 @@ class App extends Component {
         <Nav />
         <Router>
           <Articles
-            path="/articles"
+            path="/"
             username={username}
             handleChange={this.handleChange}
           />
           <ArticleById
-            path="articles/:article_id"
+            path="/:article_id"
             username={username}
             handleChange={this.handleChange}
           />
           <CommentsByArticleId
-            path="articles/:article_id/comments/*"
+            path="/:article_id/comments/*"
             username={username}
           />
           <ErrorPage default />

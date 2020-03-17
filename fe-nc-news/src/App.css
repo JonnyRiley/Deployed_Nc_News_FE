@@ -291,10 +291,7 @@ li {
   font-size: medium;
   margin-left: 2px;
 }
-.img_home_BNews {
-  height: 60%;
-  width: 80%;
-}
+
 .clock {
   display: flex;
   flex-direction: row;
@@ -323,17 +320,5 @@ li {
     padding: 0px;
     margin: 5px 5px 5px 5px;
     height: auto;
-  }
-}
-@media only screen and (max-width: 815px) {
-  .img_home_BNews {
-    height: 350px;
-    width: 550px;
-  }
-}
-@media only screen and (max-width: 575px) {
-  .img_home_BNews {
-    height: 250px;
-    width: 325px;
   }
 }
